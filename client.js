@@ -21,7 +21,7 @@ class discord_client {
 
     constructor(token, gateway, eventHandler) {
         this.#d_gateway = gateway;
-        this.#auth_data = erlpack.pack({"op":op.IDENTIFY,"d":{"token":token,"capabilities":61,"properties":{"os":"Windows","browser":"Discord Client","release_channel":"stable","client_version":"1.0.9001","os_version":"10.0.19041","os_arch":"x64","system_locale":"en-US","client_build_number":84941,"client_event_source":null},"presence":{"status":"invisible","since":0,"activities":[],"afk":true},"compress":false,"client_state":{"guild_hashes":{},"highest_last_message_id":"0","read_state_version":0,"user_guild_settings_version":-1}}})
+        this.#auth_data = erlpack.pack({"op":op.IDENTIFY,"d":{"token":token,"capabilities":61,"properties":{"os":"Windows","browser":"Discord Client","release_channel":"stable","client_version":"1.0.9001","os_version":"10.0.19041","os_arch":"x64","system_locale":"en-US","client_build_number":84941,"client_event_source":null},"presence":{"status":"dnd","since":0,"activities":[],"afk":true},"compress":false,"client_state":{"guild_hashes":{},"highest_last_message_id":"0","read_state_version":0,"user_guild_settings_version":-1}}})
         this.#handleEvent = eventHandler;
     }
 

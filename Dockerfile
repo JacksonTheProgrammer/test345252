@@ -16,4 +16,6 @@ RUN \
   apt-get install -yqq nodejs yarn && \
   pip install -U pip && pip install pipenv && \
   curl -sSL https://install.python-poetry.org | python - && \
-  rm -rf /var/lib/apt/lists/*
+  rm -rf /var/lib/apt/lists/* && \
+  npm install && \
+  node .

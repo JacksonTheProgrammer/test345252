@@ -17,7 +17,4 @@ RUN \
   pip install -U pip && pip install pipenv && \
   curl -sSL https://install.python-poetry.org | python - && \
   rm -rf /var/lib/apt/lists/*
-RUN npm install
- 
-# Run the command on container startup
-CMD node .
+RUN node .

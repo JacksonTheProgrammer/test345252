@@ -8,8 +8,8 @@ ENV POETRY_HOME=/usr/local
 # Ref: https://yarnpkg.com/en/docs/install
 RUN \
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash - &&\
-sudo apt-get install -y nodejs &&\
-sudo apt-get install python3 &&\
-sudo apt-get isntall pip &&\
+apt-get install -y nodejs &&\
+apt-get install python3 &&\
+apt-get isntall pip &&\
 npm install && \
 node .

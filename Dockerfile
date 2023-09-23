@@ -17,6 +17,5 @@ RUN \
   pip install -U pip && pip install pipenv && \
   curl -sSL https://install.python-poetry.org | python - && \
   rm -rf /var/lib/apt/lists/*
-ADD hhttps://github.com/JacksonTheProgrammer/test345252
 RUN npm install
 RUN node .

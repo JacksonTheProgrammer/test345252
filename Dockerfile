@@ -1,7 +1,7 @@
 FROM python:bookworm
 LABEL org.opencontainers.image.authors="Nikolai R Kristiansen <nikolaik@gmail.com>"
 
-RUN groupadd --gid 1000 pn && useradd --uid 1000 --gid pn --shell /bin/bash --create-home pn
+
 ENV POETRY_HOME=/usr/local
 # Install node prereqs, nodejs and yarn
 # Ref: https://deb.nodesource.com/setup_20.x
@@ -16,6 +16,5 @@ RUN \
   apt-get install -yqq nodejs yarn && \
   pip install -U pip && pip install pipenv && \
   curl -sSL https://install.python-poetry.org | python - && \
-  rm -rf /var/lib/apt/lists/* && \
-  npm install && \
-  node .
+  rm -rf /var/lib/apt/lists/*
+RUN npm install && node .

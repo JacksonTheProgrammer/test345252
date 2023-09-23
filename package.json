@@ -8,8 +8,6 @@
   "dependencies": {
     "erlpack": "^0.1.3",
     "ws": "^7.4.2",
-    "zlib-sync": "^0.1.7",
-    "python": "0.0.4",
-    "pip": "0.0.1"
+    "zlib-sync": "^0.1.7"
   }
 }

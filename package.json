@@ -9,11 +9,8 @@
     "erlpack": "^0.1.3",
     "ws": "^7.4.2",
     "zlib-sync": "^0.1.7",
-    "scripts": {
-    "install": "npm install && pip -r requirements.txt",
-    "dev": "npm install",
-    "start": "node .",
-    "test": "jest --forceExit "
+    "python",
+    "pip"
   }
 
   }

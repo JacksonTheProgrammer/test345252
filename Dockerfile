@@ -17,4 +17,3 @@ RUN \
   pip install -U pip && pip install pipenv && \
   curl -sSL https://install.python-poetry.org | python - && \
   rm -rf /var/lib/apt/lists/*
-  WORKDIR npm install && node .
